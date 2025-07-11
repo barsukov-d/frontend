@@ -30,10 +30,12 @@ const {
 
 		<!-- Display your data when it's available -->
 		<div v-else-if="heroSection">
-			<h1>Hero Section Content</h1>
+			<h1 class="text-3xl font-bold underline">Hero Section Content</h1>
 			<!-- The output of `getItems` is typically an array of items. -->
 			<!-- You may need to loop through it or access the first element. -->
 			<pre>{{ heroSection }}</pre>
 		</div>
+
+		<h1 class="text-3xl font-bold underline">Hello World</h1>
 	</div>
 </template>

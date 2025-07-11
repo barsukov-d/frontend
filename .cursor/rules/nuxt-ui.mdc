@@ -1,0 +1,50 @@
+# Nuxt UI Library Guide
+
+This project uses [Nuxt UI](https://ui.nuxt.com/getting-started), a UI library for building Vue and Nuxt applications.
+
+## Core Concepts
+
+- **Styling**: Nuxt UI is built exclusively on top of **Tailwind CSS**. It is not compatible with other styling frameworks.
+- **Component Primitives**: It is based on [Reka UI](https://github.com/reka-ui/reka), which provides over 55 accessible and unstyled component primitives.
+- **Styling Variants**: It uses `tailwind-variants` to manage component styles and variants.
+
+## Component Overview
+
+Nuxt UI provides a rich set of over 111+ components. The full list can be found in the [official documentation](https://ui.nuxt.com/components). The components are organized into the following categories:
+
+### Element
+Core UI building blocks.
+- **Examples**: `Alert`, `Avatar`, `Badge`, `Button`, `Icon`, `Kbd`
+
+### Form
+Interactive form elements.
+- **Examples**: `Form`, `FormField`, `Input`, `Select`, `Checkbox`, `RadioGroup`, `Switch`
+
+### Data
+Components for displaying and managing data.
+- **Examples**: `Table`, `Accordion`, `Card`, `Carousel`, `Timeline`
+
+### Navigation
+Components for user navigation and wayfinding.
+- **Examples**: `Link`, `Breadcrumb`, `Pagination`, `Tabs`, `NavigationMenu`
+
+### Overlay
+Floating UI elements that overlay the main content.
+- **Examples**: `Modal`, `Slideover`, `Popover`, `Tooltip`, `Toast`, `ContextMenu`
+
+### Layout
+Structural components for organizing content.
+- **Examples**: `Container`, `Card`, `Skeleton`, `Separator`
+
+## Development & Best Practices
+
+- **DevTools**: For an enhanced development experience, you can add the `compodium` module to inspect components live:
+  ```bash
+  npx nuxi module add compodium
+  ```
+- **File to reference for Nuxt UI configuration**: `[app.config.ts](mdc:app.config.ts)` is where you can customize the theme and component presets for Nuxt UI.
+- **File to reference for Tailwind CSS configuration**: `[tailwind.config.ts](mdc:tailwind.config.ts)` is used for the main Tailwind CSS setup.
+- **Icons**: Nuxt UI integrates with the `@nuxt/icon` module for easy use of icons within components.
+- **Color Mode**: The library has built-in support for light and dark mode.
+
+By following these guidelines, we can ensure consistent and efficient development with Nuxt UI.
