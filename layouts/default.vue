@@ -1,47 +1,9 @@
 <template>
 	<div>
-		<header class="bg-gray-100 dark:bg-gray-800 shadow-sm">
-			<UContainer>
-				<div class="flex items-center justify-between h-16">
-					<div class="flex items-center">
-						<NuxtLink to="/" class="text-xl font-bold"> Advokat </NuxtLink>
-					</div>
-					<nav class="hidden md:flex items-center space-x-4">
-						<NuxtLink
-							to="/services"
-							class="text-gray-700 dark:text-gray-300 hover:text-primary"
-							>Услуги</NuxtLink
-						>
-						<NuxtLink
-							to="/about"
-							class="text-gray-700 dark:text-gray-300 hover:text-primary"
-							>О компании</NuxtLink
-						>
-						<NuxtLink
-							to="/cases"
-							class="text-gray-700 dark:text-gray-300 hover:text-primary"
-							>Кейсы</NuxtLink
-						>
-						<NuxtLink
-							to="/blog"
-							class="text-gray-700 dark:text-gray-300 hover:text-primary"
-							>Блог</NuxtLink
-						>
-						<NuxtLink
-							to="/contacts"
-							class="text-gray-700 dark:text-gray-300 hover:text-primary"
-							>Контакты</NuxtLink
-						>
-					</nav>
-					<div class="flex items-center">
-						<UButton color="primary" variant="solid">Бесплатная консультация</UButton>
-					</div>
-				</div>
-			</UContainer>
-		</header>
+		<TheHeader />
 
 		<main>
-			<UContainer>
+			<UContainer class="mt-8">
 				<slot />
 			</UContainer>
 		</main>

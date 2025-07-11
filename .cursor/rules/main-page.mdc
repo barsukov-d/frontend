@@ -1,95 +1,96 @@
+# Lawyer Website Main Page Structure (Marketing + SEO)
 
+This document describes the optimal main page structure for a law firm or private attorney's website. The structure is designed considering marketing, SEO, Core Web Vitals, and E-E-A-T (Expertise, Authoritativeness, Trustworthiness) factors.
 
-# Структура главной страницы сайта адвоката (Маркетинг + SEO)
+## 1. Header
 
-Этот документ описывает оптимальную структуру главной страницы для сайта юридической фирмы или частного адвоката. Структура разработана с учетом факторов маркетинга, SEO, Core Web Vitals и E-E-A-T (Expertise, Authoritativeness, Trustworthiness).
+- **Components**:
+    - Logo and a short slogan (e.g., "Moscow Law Group").
+    - Main menu (up to 6 items): Services, About Us, Case Studies, Blog, Contact, 24/7.
+    - A contrasting **"Free Consultation"** button that remains visible on scroll (sticky).
+    - Clickable phone number and messenger icons (WhatsApp / Telegram).
+- **SEO/UX**: Use the `<nav>` tag and `aria-label` for navigation. Phone numbers should be in `tel:` format and marked up with `schema.org/ContactPoint`.
 
-## 1. Шапка (Header)
+## 2. Hero Block (Above the fold)
 
-- **Компоненты**:
-    - Логотип и короткий слоган (например, "Адвокатская коллегия, Москва").
-    - Основное меню (до 6 пунктов): Услуги, О компании, Кейсы, Блог, Контакты, 24/7.
-    - Контрастная кнопка **"Бесплатная консультация"**, которая остается видимой при прокрутке (sticky).
-    - Кликабельный номер телефона и иконки мессенджеров (WhatsApp / Telegram).
-- **SEO/UX**: Использовать тег `<nav>`, `aria-label` для навигации. Телефоны должны быть в формате `tel:` и размечены с помощью `schema.org/ContactPoint`.
+- **Height**: No more than 650px.
+- **Components**:
+    - **`H1` Header**: Main commercial phrase (e.g., "Family and Inheritance Lawyer Services in Moscow").
+    - **Subheading**: Promise of a result and social proof ("Over 600 cases won since 2014").
+    - **List (3 items)**: Key advantages (e.g., fixed price, results-oriented work, payment plans available).
+    - **Main CTA**: "Assess Case Prospects →" button and/or a simple contact form (name, phone).
+- **SEO**: The `H1` must be unique, up to 65 characters, and include keywords "Lawyer + City + Specialization".
 
-## 2. Hero-блок (Первый экран)
+## 3. Trust Block ("Why Us" / Trust Signals)
 
-- **Высота**: Не более 650px.
-- **Компоненты**:
-    - **Заголовок `H1`**: Основная коммерческая фраза (например, "Услуги адвоката по семейным и наследственным спорам в Москве").
-    - **Подзаголовок**: Обещание результата и социальное доказательство ("Более 600 выигранных дел с 2014 года").
-    - **Список (3 пункта)**: Ключевые преимущества (например, фиксированная цена, работа до результата, возможна рассрочка).
-    - **Главный CTA**: Кнопка "Оценить перспективы дела →" и/или простая форма заявки (имя, телефон).
-- **SEO**: `H1` должен быть уникальным, до 65 символов, и содержать ключевые слова "Адвокат + город + специализация".
+- **Components**:
+    - Icons with key metrics: years of experience, percentage of cases won, academic degrees.
+    - Logos of clients, partners, or media where featured.
+- **Microdata**: `LegalService` with `AggregateRating`.
 
-## 3. Блок доверия ("Почему мы" / Trust Signals)
+## 4. "Services" Block
 
-- **Компоненты**:
-    - Иконки с ключевыми показателями: опыт в годах, % выигранных дел, наличие ученых степеней.
-    - Логотипы клиентов, партнеров или СМИ, где были публикации.
-- **Микроразметка**: `LegalService` с `AggregateRating`.
+- **Components**:
+    - 4-6 cards for key services. Each card should have an icon, a short pain-point-oriented description, and a "Learn More" button.
+- **SEO**: Each card links to a separate, detailed service page (with prices, relevant case studies, FAQ). This creates a proper site silo structure.
 
-## 4. Блок "Услуги"
+## 5. Case Studies / Practice
 
-- **Компоненты**:
-    - 4-6 карточек ключевых услуг. Каждая карточка: иконка, короткое описание, ориентированное на "боль" клиента, и кнопка "Подробнее".
-- **SEO**: Каждая карточка ведет на отдельную, детально проработанную страницу услуги (с ценами, кейсами по теме, FAQ). Это формирует правильную структуру сайта (silo).
+- **Components**:
+    - Slider with 3-5 recent successful cases. Case structure: "Problem → Strategy → Result" (with figures and links to court decisions).
+    - "View All Cases" button.
+- **E-E-A-T**: If possible, attach scans of anonymized court decisions or provide case numbers to confirm expertise.
 
-## 5. Кейсы / Практика
+## 6. Testimonials
 
-- **Компоненты**:
-    - Слайдер с 3-5 недавними успешными делами. Структура кейса: "Проблема → Стратегия → Результат" (с цифрами и ссылками на решения суда).
-    - Кнопка "Смотреть все кейсы".
-- **E-E-A-T**: По возможности прикладывать сканы обезличенных судебных решений или указывать номера дел для подтверждения экспертизы.
+- **Components**:
+    - Embedded YouTube video testimonial (with lazy-loading for speed).
+    - Carousel with text testimonials (name, city, client photo).
+- **Microdata**: `Review` with `ratingValue`.
 
-## 6. Отзывы
+## 7. Team
 
-- **Компоненты**:
-    - Встроенное видео-отзыв с YouTube (с отложенной загрузкой для скорости).
-    - Карусель с текстовыми отзывами (имя, город, фото клиента).
-- **Микроразметка**: `Review` со `ratingValue`.
+- **Components**:
+    - Photos of key lawyers/partners.
+    - Caption: specialization, experience, link to a personal page.
+    - Scans of licenses and bar association membership certificates.
+- **SEO**: Personal pages allow ranking for queries with the lawyer's full name.
 
-## 7. Команда
+## 8. Blog / Useful Content
 
-- **Компоненты**:
-    - Фотографии ключевых юристов/партнеров.
-    - Подпись: специализация, опыт, ссылка на персональную страницу.
-    - Сканы лицензий и свидетельств о членстве в адвокатских палатах.
-- **SEO**: Персональные страницы позволяют ранжироваться по запросам с ФИО адвоката.
+- **Components**:
+    - 3 recent articles optimized for informational queries (e.g., "how to file for divorce," "inheritance timelines").
+    - "Read All Articles" button.
+- **SEO**: Increases the site's topical authority, attracts traffic from long-tail queries, and allows for internal linking to service pages.
 
-## 8. Блог / Полезные материалы
+## 9. FAQ (Question & Answer)
 
-- **Компоненты**:
-    - 3 последние статьи, оптимизированные под информационные запросы ("как подать на развод", "сроки вступления в наследство").
-    - Кнопка "Читать все статьи".
-- **SEO**: Увеличивает "тематический авторитет" сайта, привлекает трафик по низкочастотным запросам и позволяет делать внутренние перелинковки на страницы услуг.
+- **Components**:
+    - An "Accordion" with 6-8 popular questions and concise answers.
+- **Microdata**: `FAQPage` to get rich snippets in search results.
 
-## 9. FAQ (Вопрос-ответ)
+## 10. Contact Block and Map
 
-- **Компоненты**:
-    - "Аккордеон" с 6-8 популярными вопросами и краткими ответами.
-- **Микроразметка**: `FAQPage` для получения расширенных сниппетов в поисковой выдаче.
+- **Components**:
+    - Interactive Google/Yandex map.
+    - Contact details: address, phone, email, business hours.
+    - "Request a Callback" contact form.
+- **Microdata**: `LocalBusiness` with `geoCoordinates`.
 
-## 10. Контактный блок и карта
+## 11. Footer
 
-- **Компоненты**:
-    - Интерактивная карта Google/Yandex.
-    - Контактные данные: адрес, телефон, email, график работы.
-    - Форма обратной связи "Заказать обратный звонок".
-- **Микроразметка**: `LocalBusiness` с указанием `geoCoordinates`.
-
-## 11. Футер (Подвал сайта)
-
-- **Компоненты**:
-    - Дублирующее меню.
-    - Юридическая информация: ИНН/ОГРН, политика конфиденциальности.
-    - Иконки платежных систем, SSL-сертификата.
-    - Ссылки на социальные сети.
+- **Components**:
+    - Duplicate menu.
+    - Legal information: Tax ID/Registration numbers, privacy policy.
+    - Payment system icons, SSL certificate badge.
+    - Social media links.
 
 ---
-### Технические требования для Nuxt-проекта
+### Technical Requirements for Nuxt Project
 
-- **Скорость**: Оптимизировать изображения (`<NuxtImg>`), использовать lazy-loading для видео и карт, откладывать загрузку сторонних скриптов (чаты, аналитика).
+- **Speed**: Optimize images (`<NuxtImg>`), use lazy-loading for videos and maps, defer loading of third-party scripts (chats, analytics).
+- **Microdata**: Implement all specified `schema.org` types.
+- **Accessibility**: Ensure sufficient contrast, keyboard navigation, and `aria-label` for interactive elements.
+
 - **Микроразметка**: Реализовать все указанные `schema.org` типы.
 - **Доступность (Accessibility)**: Обеспечить контрастность, навигацию с клавиатуры и `aria-label` для интерактивных элементов.
